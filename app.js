@@ -138,6 +138,15 @@ console.log(score);
 
 //11. Write a program to initialize an array with city names. Copy 3 array elements from cities array to selectedCities array.
 
+var cities = ["Karachi", "Lahore", "Islamabad", "Quetta", "Peshawar"];
+
+var selectedCities = cities.slice(0, 3);
+
+document.write("Cities: " + cities + "<br>");
+document.write("Selected Cities: " + selectedCities);
+
+
+
 // 12. Write a program to create a single
 //  string from the below mentioned array: var arr = [“This ”, “ is ”, “ my ”, “ cat”]; (Use array’s join method)
 var arr = ["This ", " is ", " my ", " cat"];
@@ -148,8 +157,37 @@ console.log(myarr);
 //13. Create a new array. Store values one by one in such a way that you can access the
 // values in the order in which they were stored. (FIFO-First In First Out)
 
+var queue = [];
+queue.push("Keyboard");
+queue.push("Mouse");
+queue.push("Printer");
+document.write("Devices:<br>");
+document.write(queue[0] + "<br>");
+document.write(queue[1] + "<br>");
+document.write(queue[2]);
+
+
 // 14.Create a new array. Store values one by one in such a way that you can access
 // the values in reverse order. (Last In-First Out)
 
+var stack = [];
+stack.push("Keyboard");
+stack.push("Mouse");
+stack.push("Printer");
+document.write("Devices:<br>");
+document.write(stack.pop() + "<br>");
+document.write(stack.pop() + "<br>");
+document.write(stack.pop());
+
 //15. Write a program to store phone manufacturers (Apple, Samsung, Motorola, Nokia, Sony & Haier) in an array.
 //  Display the following dropdown/select menu in your browser using document.write() method:
+
+var manufacturers = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+document.write("<select>");
+document.write("<option>" + manufacturers[0] + "</option>");
+document.write("<option>" + manufacturers[1] + "</option>");
+document.write("<option>" + manufacturers[2] + "</option>");
+document.write("<option>" + manufacturers[3] + "</option>");
+document.write("<option>" + manufacturers[4] + "</option>");
+document.write("<option>" + manufacturers[5] + "</option>");
+document.write("</select>");
