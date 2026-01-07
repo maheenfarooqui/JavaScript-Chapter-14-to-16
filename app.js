@@ -157,14 +157,14 @@ console.log(myarr);
 //13. Create a new array. Store values one by one in such a way that you can access the
 // values in the order in which they were stored. (FIFO-First In First Out)
 
-var queue = [];
-queue.push("Keyboard");
-queue.push("Mouse");
-queue.push("Printer");
+var myAarr = [];
+myAarr.push("Keyboard");
+myAarr.push("Mouse");
+myAarr.push("Printer");
 document.write("Devices:<br>");
-document.write(queue[0] + "<br>");
-document.write(queue[1] + "<br>");
-document.write(queue[2]);
+document.write(myAarr[0] + "<br>");
+document.write(myAarr[1] + "<br>");
+document.write(myAarr[2]);
 
 
 // 14.Create a new array. Store values one by one in such a way that you can access
